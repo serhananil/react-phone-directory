@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 
 
 function Contacts(){
-    const [contacts, setContacts] = useState([]);
+    const [contacts, setContacts] = useState([{fullName: 'Sero', phoneNumber: '5378684557'}, {fullName: 'Ozzy', phoneNumber: '5549919091'}]);
 
     useEffect( () => {
         console.log(contacts);
