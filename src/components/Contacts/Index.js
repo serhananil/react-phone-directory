@@ -12,7 +12,7 @@ function Contacts(){
     }, [contacts] )
 
     return(
-        <div className={"container App"}>
+        <div className={"mt-5 container App"}>
             <div className={"card"}>
                 <div className={"card-header text-danger"}>
                     Contact List App

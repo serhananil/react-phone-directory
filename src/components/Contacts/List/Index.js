@@ -21,12 +21,13 @@ function List({contacts}) {
                 <input type={"search"} className={"form-control"} id={'searchInput'} placeholder={'| Filter Contact'}
                        value={filterText} onChange={(e) => setFilterText(e.target.value)}/>
             </div>
-            <ul id={'directorySection'} className="list-group">
+            <ul id={'directorySection'} className="list-group mb-3">
                 {filtered.map((contact, i) => <li key={i} className="list-group-item">
                     <div><span className="fw-bold">Name:</span> {contact.fullName}</div>
                     <div><span className="fw-bold">Phone Number:</span> {contact.phoneNumber}</div>
                 </li>)}
             </ul>
+            <p>Total Contacts ({filtered.length})</p>
         </div>
     )
 }
